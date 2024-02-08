@@ -20,13 +20,14 @@ main {
   font-size: 20px;
 }
 
-section {
-  width: 840px;
+section,
+footer {
+  max-width: 840px;
   margin: 64px auto;
+  padding-inline: 64px;
 }
 
 footer {
-  width: 840px;
   border-top: 2px solid;
   padding-top: 16px;
   margin: 64px auto 16px;
@@ -61,4 +62,12 @@ img {
   height: 320px;
   object-fit: cover;
   user-select: none;
+}
+
+.col {
+  columns: 400px 2;
+}
+
+article {
+  break-inside: avoid;
 }
